@@ -1,8 +1,8 @@
-# aquí se crea aplicación flask
+from flask import Flask # aquí se crea aplicación flask
 
-from flask import Flask
+FICHERO = "data/movimientos.csv"
 
 app = Flask(__name__)
 
-# tiene que ser depueés de hacer la app
+# tiene que estar situado depués de hacer la app
 from balance import views 
