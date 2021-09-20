@@ -26,12 +26,14 @@ class ListaMovimientos():
             # deberes hacer que genere un instancia de mMovimiento
         fichero.close()
 
-    def escribir(self):
+    def escribir(self): # si no hay mov asegurarnos que no de error
         if len(self.movimientos) == 0:
             return  # no sigue
 
         fichero = open(FICHERO, "w")
-        nombres_campos = list(self.movimiento[0].keys())  # convertir en lista
+        # convertir en lista la primera línea/diccionario de la lista movimientos
+        nombres_campos = list(self.movimiento[0].keys())
+        # nombres_campos = ["fecha", "conpceto", "ingreso_gasto", "cantidad"]
         dwriter = csv.DictWriter(fichero, fieldnames=nombres_campos)
 
         for movimiento in self.movimientos:
