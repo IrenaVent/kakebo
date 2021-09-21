@@ -3,9 +3,12 @@ import csv
 fichero = open("data/movimientos.csv", "r")
 reader = csv.reader(fichero)
 
+print ("reader---->", reader)
+
 lista_de_listas = []
 dic_model = {}
 lista_dict = []
+lista_dict_2 = []
 
 for lista in reader:
     lista_de_listas.append(lista)
@@ -27,4 +30,4 @@ while var < len(dic_model):
     var += 1
     lista_dict.append(concepto)
 
-print(lista_dict)
+print("lista_dict ------>",lista_dict)

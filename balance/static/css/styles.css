@@ -19,10 +19,10 @@ footer{
 
 header *, footer *{
     text-align: center;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
     background-color: var(--color-secundario);
     color: var(--azul);
-    font-size: 0.8rem;
+    font-size: 1.1rem;
     padding: 2rem;
 }
 
