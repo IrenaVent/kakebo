@@ -61,7 +61,8 @@ class ListaMovimientos():
         fichero.close()
 
     def anyadir(self, valor):
-        movimiento = {}
+        movimiento = {} # creamos el diccionario de nuevo movimiento
+        # moviemiento[key] = valor[value]
         movimiento["fecha"] = valor["fecha"]
         movimiento["concepto"] = valor["concepto"]
         movimiento["ingreso_gasto"] = valor["ingreso_gasto"]

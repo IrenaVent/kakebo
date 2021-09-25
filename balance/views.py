@@ -22,10 +22,10 @@ def nuevo():
         if len(movimiento.errores) > 0:
             return render_template("nuevo_movimiento.html", errores=movimiento.errores, form=datos)
 
-        # TODO valodar datos
+        # TODO validar datos
 
         lm = ListaMovimientos() #instanciamos LM para actuar sobre ella posteriormente
         lm.leer() 
         lm.anyadir(datos)
         lm.escribir()
-        return redirect(url_for("index"))
+        return redirect(url_for("index")) # no indicamos la ruta, esta en el futuro puede cambiar sino redireccionamos con nombre página

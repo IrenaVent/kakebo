@@ -4,6 +4,6 @@ FICHERO = "data/movimientos.csv"
 
 app = Flask(__name__)
 
-from balance import views
+# tiene que estar situado depués de crear la app
 
-# tiene que estar situado depués de hacer la app
+from balance import views
