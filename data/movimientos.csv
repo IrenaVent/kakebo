@@ -3,3 +3,7 @@ fecha,concepto,ingreso_gasto,cantidad
 05/01/2021,regalos,G,24.0
 06/01/2021,gasolina,G,50.0
 10/01/2021,compra mensual,G,270.0
+2021-09-22,prueba 1,G,20
+2021-09-07,no me acuerdo,G,10
+2021-09-23,prueba tuplas,G,10
+2021-09-23,prueba,G,20

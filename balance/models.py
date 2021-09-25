@@ -4,18 +4,19 @@ from . import FICHERO
 
 class ValidationError(Exception):
     pass
+#clase que no se usa
 
 class Movimiento():
     def __init__(self, diccionario):
         self.errores = []
 
         try:
-            self.fecha = date.fromisoformat(diccionario["fecha"])
+            self.fecha = date.fromisoformat(diccionario["fecha"]) #crear una fecha a partir de una cadena
             ahora = datetime.now()
             if self.fecha.strftime("%Y%m%d") > ahora.strftime("%Y%m%d"):
                 self.errores.append("La fecha no puede ser superior a la actual")
         except ValueError:
-            self.errores.append("Formato de fecha")
+            self.errores.append("Formato de fecha incorrecto")
 
         self.concepto = diccionario["concepto"]
         if self.concepto == "":

@@ -17,7 +17,7 @@ def nuevo():
     if request.method == "GET":
         return render_template("nuevo_movimiento.html", errores=[], form={"fecha":"", "concepto": "", "cantidad":""})
     else:
-        datos = request.form
+        datos = request.form 
         movimiento = Movimiento(datos)
         if len(movimiento.errores) > 0:
             return render_template("nuevo_movimiento.html", errores=movimiento.errores, form=datos)
